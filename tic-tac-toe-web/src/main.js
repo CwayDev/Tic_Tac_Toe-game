@@ -90,6 +90,18 @@ function resetGame() {
 
 // MINIMAX ALGORITHM
 function getBestMove() {
+  // 40% chance the AI makes a random move instead of the optimal move
+  if (Math.random() < 0.40) {
+    let emptyCells = [];
+    for (let i = 0; i < 9; i++) {
+      if (board[i] === null) emptyCells.push(i);
+    }
+    if (emptyCells.length > 0) {
+      const randomIndex = Math.floor(Math.random() * emptyCells.length);
+      return emptyCells[randomIndex];
+    }
+  }
+
   let bestScore = -Infinity;
   let move;
   for (let i = 0; i < 9; i++) {
