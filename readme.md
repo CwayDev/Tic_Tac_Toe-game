@@ -10,7 +10,7 @@ To start the game, run the following command in your terminal:
 python tic_tac_toe.py
 ```
 
-*Note: If `python` doesn't work, try `py tic_tac_toe.py`.*
+_Note: If `python` doesn't work, try `py tic_tac_toe.py`._
 
 ## 🕹️ How to Play
 
@@ -34,3 +34,4 @@ python tic_tac_toe.py
 - Simple terminal interface.
 - Random-move AI opponent.
 - Automatic win and tie detection.
+- play and enjoy the game
